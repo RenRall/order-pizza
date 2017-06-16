@@ -25,7 +25,15 @@ Pizza.prototype.cost = function() {
 // user interface logic
 $(document).ready(function() {
   event.preventDefault();
-var pizza = {size: [small, medium, large, family], cheese: [mozzarella, provolone, parmesan], meat: [sausage, pepperoni, CanadianBacon, chicken], veggie: [olives, mushrooms, onions, peppers, artichoke]}
+var pizza = { size: [small, medium, large, family], cheese: [mozzarella, provolone, parmesan], meat: [sausage, pepperoni, CanadianBacon, chicken], veggie: [olives, mushrooms, onions, peppers, artichokes] }
+
+var size1 = "small", price = 3;
+var size2 = "medium", price = 4;
+var size3 = "large", price = 5;
+var size4 = "family", price = 6;
+var cheese = price 2;
+var meat = price 3;
+var veggie = price 1;
 
 // var size = {size: "small", "medium", "large", "family"}
 // var cheese = {name: "mozzarella", "provolone", "parmesan"};
