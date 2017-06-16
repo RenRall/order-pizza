@@ -1,0 +1,24 @@
+body {
+  background-color: lightcoral;
+}
+.checkbox {
+  font-size: 18px;
+  font-family: fantasy;
+  font-weight: bolder;
+}
+.jumbotron {
+  font-family: times new roman;
+
+}
+h3 {
+  font-family: times new roman;
+  font-weight: bold;
+}
+#user-input {
+  font-size: 18px;
+}
+.btn {
+  font-size: 20px;
+  font-family: times new roman;
+
+}

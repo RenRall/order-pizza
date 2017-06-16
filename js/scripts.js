@@ -8,28 +8,19 @@ meat = 0;
 veggie = 0;
 
 
-
-function Pizza (size, cheese, meat, veggie) {
-  this.size = size;
+function Pizza (size1, size2, size3, size4, cheese, meat, veggie) {
+  this.size1 = size1;
+  this.size2 = size2;
+  this.size3 = size3;
+  this.size4 = size4;
   this.cheese = cheese;
   this.meat = meat;
   this.veggie = veggie;
 }
-function processPizzaOrder (theNumber) {
-  var ????? = theNumber;
-  if
+
+Pizza.prototype.cost = function(transactionAmount) {
+  return this.size1 + this.size2 + this.size3 + this.size4 + this.cheese + this.meat + this.veggie;
 }
-
-
-Pizza.prototype.cost = function() {
-  return this.size + this.cheese + this.meat + this.veggie;
-}
-
-
-
-
-
-
 
 
 // user interface logic
@@ -42,15 +33,17 @@ $(document).ready(function() {
   var meat = price 3;
   var veggie = price 1;
 
-  $("form#processPizzaOrder").submit(function(event) {
+  $("form#pizzaOrder").submit(function(event) {
+    $("result").empty();
     event.preventDefault();
-  }
 
 
+    var userInput = parseInt($("input#user-input").val());
 
+  });
+});
 
-var pizza = { size: [small, medium, large, family], cheese: [mozzarella, provolone, parmesan], meat: [sausage, pepperoni, CanadianBacon, chicken], veggie: [olives, mushrooms, onions, peppers, artichokes] }
-
+var pizza = { size: [small, medium, large, family], cheese: [mozzarella, provolone, parmesan, asiago], meat: [sausage, pepperoni, CanadianBacon, chicken], veggie: [olives, mushrooms, onions, peppers, artichokes] }
 
 
 // var size = {size: "small", "medium", "large", "family"}
