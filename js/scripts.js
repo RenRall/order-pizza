@@ -1,4 +1,14 @@
 // business logic
+size1 = 0;
+size2 = 0;
+size3 = 0;
+size4 = 0;
+cheese = 0;
+meat = 0;
+veggie = 0;
+
+
+
 function Pizza (size, cheese, meat, veggie) {
   this.size = size;
   this.cheese = cheese;
@@ -24,16 +34,24 @@ Pizza.prototype.cost = function() {
 
 // user interface logic
 $(document).ready(function() {
-  event.preventDefault();
+  var size1 = "small", price = 3;
+  var size2 = "medium", price = 4;
+  var size3 = "large", price = 5;
+  var size4 = "family", price = 6;
+  var cheese = price 2;
+  var meat = price 3;
+  var veggie = price 1;
+
+  $("form#processPizzaOrder").submit(function(event) {
+    event.preventDefault();
+  }
+
+
+
+
 var pizza = { size: [small, medium, large, family], cheese: [mozzarella, provolone, parmesan], meat: [sausage, pepperoni, CanadianBacon, chicken], veggie: [olives, mushrooms, onions, peppers, artichokes] }
 
-var size1 = "small", price = 3;
-var size2 = "medium", price = 4;
-var size3 = "large", price = 5;
-var size4 = "family", price = 6;
-var cheese = price 2;
-var meat = price 3;
-var veggie = price 1;
+
 
 // var size = {size: "small", "medium", "large", "family"}
 // var cheese = {name: "mozzarella", "provolone", "parmesan"};
