@@ -17,10 +17,10 @@
       <form id="pizzaOrder">
         <div class="form-group">
           <div class="checkbox">
-            <label class="checkbox-inline"><input type="checkbox"value="3">Small</label>
-            <label class="checkbox-inline"><input type="checkbox"value="4">Medium</label>
-            <label class="checkbox-inline"><input type="checkbox"value="5">Large</label>
-            <label class="checkbox-inline"><input type="checkbox"value="6">Family</label>
+            <label class="checkbox-inline"><input type="radio" name="size" value="small"> Small</label>
+            <label class="checkbox-inline"><input type="radio" name="size" value="medium"> Medium</label>
+            <label class="checkbox-inline"><input type="radio" name="size" value="large"> Large</label>
+            <label class="checkbox-inline"><input type="radio" name="size" value="family"> Family</label>
           </div>
           <br>
           <div class="well">
@@ -29,34 +29,36 @@
 
           <h3>Cheese:</h3>
           <div class="checkbox">
-            <label class="checkbox-inline"><input type="checkbox"value="2">Mozzarella</label>
-            <label class="checkbox-inline"><input type="checkbox"value="2">Provolone</label>
-            <label class="checkbox-inline"><input type="checkbox"value="2">Parmesan</label>
-            <label class="checkbox-inline"><input type="checkbox"value="2">Asiago</label>
+            <label class="checkbox-inline"><input type="checkbox" name="cheese" value="mozzarella">Mozzarella</label>
+            <label class="checkbox-inline"><input type="checkbox" name="cheese" value="provolone">Provolone</label>
+            <label class="checkbox-inline"><input type="checkbox" name="cheese" value="parmesan">Parmesan</label>
+            <label class="checkbox-inline"><input type="checkbox" name="cheese" value="asiago">Asiago</label>
           </div>
 
           <h3>Meat:</h3>
           <div class="checkbox">
-            <label class="checkbox-inline"><input type="checkbox"value="3">Sausage</label>
-            <label class="checkbox-inline"><input type="checkbox"value="3">Pepperoni</label>
-            <label class="checkbox-inline"><input type="checkbox"value="3">Canadian Bacon</label>
-            <label class="checkbox-inline"><input type="checkbox"value="3">Chicken</label>
+            <label class="checkbox-inline"><input type="checkbox" name="meat" value="sausage">Sausage</label>
+            <label class="checkbox-inline"><input type="checkbox" name="meat" value="pepperoni">Pepperoni</label>
+            <label class="checkbox-inline"><input type="checkbox" name="meat" value="canadian bacon">Canadian Bacon</label>
+            <label class="checkbox-inline"><input type="checkbox" name="meat" value="chicken">Chicken</label>
           </div>
 
           <h3>Veggies:</h3>
           <div class="checkbox">
-            <label class="checkbox-inline"><input type="checkbox"value="1">Olives</label>
-            <label class="checkbox-inline"><input type="checkbox"value="1">Mushrooms</label>
-            <label class="checkbox-inline"><input type="checkbox"value="1">Onions</label>
-            <label class="checkbox-inline"><input type="checkbox"value="1">Peppers</label>
-            <label class="checkbox-inline"><input type="checkbox"value="1">Artichokes</label>
+            <label class="checkbox-inline"><input type="checkbox" name="veggies" value="olives">Olives</label>
+            <label class="checkbox-inline"><input type="checkbox" name="veggies" value="mushrooms">Mushrooms</label>
+            <label class="checkbox-inline"><input type="checkbox" name="veggies" value="onions">Onions</label>
+            <label class="checkbox-inline"><input type="checkbox" name="veggies" value="peppers">Peppers</label>
+            <label class="checkbox-inline"><input type="checkbox" name="veggies" value="artichokes">Artichokes</label>
           </div>
           <br>
-          <label for="user-input">ORDER TOTAL: $ </label>
-          <input id="user-input" type="number">
+          
+          <span id="orderTotal"></span>
         </div>
-      </form>
+
         <button type="submit" class="btn"><em><strong>Place Your Order Here:</strong></button>
+
+      </form>
     </div>
   </body>
 </html>
