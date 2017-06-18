@@ -22,9 +22,13 @@ h3 {
 .btn {
   font-size: 20px;
   font-family: times new roman;
+  margin-bottom: auto;
 }
 #orderTotal {
   font-size: 20px;
   font-weight: bold;
   font-family: times new roman;
+}
+.container-fluid {
+  margin: 20px;
 }
