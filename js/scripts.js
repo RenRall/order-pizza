@@ -44,6 +44,6 @@ $(document).ready(function() {
     var order = new Pizza (size, cheese, meat, veggies);
     //get price for this order by calling the prototype cost function
     var orderCost = order.cost();
-    $("#orderTotal").text( "Your total order is: $ " + orderCost);
+    $("#orderTotal").text("Thank you! Your order total is: $ " + orderCost);
   }); //end sub
 });

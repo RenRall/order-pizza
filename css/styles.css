@@ -22,5 +22,9 @@ h3 {
 .btn {
   font-size: 20px;
   font-family: times new roman;
-
+}
+#orderTotal {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: times new roman;
 }
